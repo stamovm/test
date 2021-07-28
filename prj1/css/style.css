@@ -6,7 +6,7 @@ div {
 
 .box {
     background-color: lightgray;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 15px 10px;
 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.13);
 }
@@ -20,10 +20,12 @@ div {
     font-weight: bold;
     text-align: center;
 }
-.textP{
-	clear: both;
-	padding: 5px;
+
+.textP {
+    clear: both;
+    padding: 5px;
 }
+
 #title1 {
     background-color: #4791d0;
     color: black;
@@ -63,9 +65,38 @@ div {
     }
 }
 
-@media (max-width: 650px) {
+/************* medium devices***********************/
+@media (min-width: 992px) and (max-width: 1199px) {
     #title1 {
         background-color: green;
-        color: white;
+
     }
+
+    #card1 {
+        width: 48%;
+        float: left;
+    }
+
+    #card2 {
+        width: 47%;
+        float:  right;
+    }
+    #card3 {
+        clear:  both;
+    }
+}
+
+/**************Large devices**********************/
+@media (min-width: 1200px) {
+    #title1 {
+        background-color: red;
+
+    }
+
+    .box {
+        width: 31%;
+        float: left;
+    }
+
+
 }
