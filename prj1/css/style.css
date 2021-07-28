@@ -1,45 +1,71 @@
 div {
-	border-color: black;
-	border-style: solid;
-	bordersize: 5px;
+    border-color: black;
+    border-style: solid;
+    bordersize: 5px;
 }
+
 .box {
-	background-color: lightgray;
-	margin: 10px 10px 10px 10px;
-	position: relative;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.9), 0 6px 6px rgba(0,0,0,0.13);
+    background-color: lightgray;
+    margin: 10px 10px 10px 10px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.13);
 }
+
 .title {
-	position: absolute;
-	top: -2px;
-	right: -2px;
-	width: 90px;
-	font-size: 130%;
-	font-weight: bold;
-	text-align: center;
+    float: right;
+    /* top: -2px;
+    right: -2px; */
+    width: 90px;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
 }
-
+.textP{
+	clear: both;
+	padding: 5px;
+}
 #title1 {
-	background-color: hotpink;
-	color: black;
+    background-color: #4791d0;
+    color: black;
 
 }
+
 #title2 {
-	background-color: red;
-	color: white;
+    background-color: #4791d0;
+    color: white;
 
 }
-#title3 {
-	background-color: yellow;
-	color: black;
 
+#title3 {
+    background-color: #4791d0;
+    color: black;
+
+}
+
+.buttonSl {
+    float: left;
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 5px 10px;
+}
+
+.buttonSl:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: #4791d0;
+
+    }
 }
 
 @media (max-width: 650px) {
-	#title1 {
-		background-color: green;
-		color: white;
-	}
-}
-
+    #title1 {
+        background-color: green;
+        color: white;
+    }
 }
