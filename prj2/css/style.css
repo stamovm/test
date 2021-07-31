@@ -1,0 +1,94 @@
+div {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.box {
+  background-color: lightgray;
+  margin: 10px 10px 15px 10px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9), 0 6px 6px rgba(0, 0, 0, 0.13);
+}
+
+.title {
+  float: right;
+  /* top: -2px;
+    right: -2px; */
+  width: 90px;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.textP {
+  clear: both;
+  padding: 5px;
+}
+
+#title1 {
+  background-color: #4791d0;
+  color: black;
+}
+
+#title2 {
+  background-color: #4791d0;
+  color: white;
+}
+
+#title3 {
+  background-color: #4791d0;
+  color: black;
+}
+
+.buttonSl {
+  float: left;
+  border-radius: 5px;
+  color: white;
+  background-color: #0f5897;
+  padding: 5px 10px 5px 10px;
+}
+
+.buttonSl:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
+/************* medium devices***********************/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #title1 {
+    background-color: green;
+  }
+
+  #card1 {
+    width: 48%;
+    float: left;
+  }
+
+  #card2 {
+    width: 47%;
+    float: right;
+  }
+  #card3 {
+    clear: both;
+  }
+}
+
+/**************Large devices**********************/
+@media (min-width: 1200px) {
+  #title1 {
+    background-color: red;
+  }
+
+  .box {
+    width: 31%;
+    float: left;
+  }
+}
