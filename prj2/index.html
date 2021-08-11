@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Marin Stamov</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="header">
-      
-      <ul class="nav1">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-      </ul>
-    </div>
-  </body>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bootstrap project</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- -------- NAV -------- -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="brand">bootstrap test</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">link 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <div>
+                <h1>Welcome</h1>
+            </div>
+        </div>
+    </section>
+    <!-- --------GRID--------- -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md mb-3">
+                    <div class="card bg-secondary text-light">
+                        <h4 class="card-title mb-3">Project 1</h4>
+                        <p class="card-text">Description of the project.</p>
+                        <a href="#" class="btn btn-primary" role="button"">view</a>
+
+                    </div>
+                </div>
+                <div class=" col-md mb-3">
+                            <div class="card bg-secondary text-light">
+                                <h4 class="card-title mb-3">Project 2</h4>
+                                <p class="card-text">Description of the project.</p>
+                                <a href="#" class="btn btn-primary">view</a>
+                            </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card bg-secondary text-light">
+                            <h4 class="card-title mb-3">Project 3</h4>
+                            <p class="card-text">Description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md mb-3">
+                        <div class="card bg-secondary text-light">
+                            <h4 class="card-title mb-3">Project 4</h4>
+                            <p class="card-text">Description of the project.</p>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card bg-secondary text-light">
+                            <h4 class="card-title mb-3">Project 5</h4>
+                            <p class="card-text">Description of the project.</p>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3"></div>
+                </div>
+            </div>
+    </section>
+</body>
+
 </html>
